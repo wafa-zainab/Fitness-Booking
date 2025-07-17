@@ -1,0 +1,111 @@
+/* Radiant gradient background */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg,  #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glassy card with shadow */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Styled email input */
+.email-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.email-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+/* Button group */
+.btns {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Stylish buttons */
+.btns button {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btns button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(118, 75, 162, 0.4);
+}
+
+/* Main content block */
+.content {
+  margin-top: 1rem;
+}
+
+/* Reusable card styling for ClassList & BookingList */
+.class-card {
+  background: white;
+  border-left: 6px solid #007bff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Badge for "Booked" */
+.badge {
+  background: #28a745;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+/* Feedback and error styling */
+.feedback, .error {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #e60000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
