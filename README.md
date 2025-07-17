@@ -6,8 +6,8 @@ A full-stack web application for booking fitness classes like **Yoga**, **Zumba*
 
 ## 🚀 Live Demo
 
-🌐 Frontend: [https://your-frontend-link](https://your-frontend-link)  
-🔗 Backend: [https://your-backend-link](https://your-backend-link)
+Flask API hosted at: https://fitness-studio-booking1.onrender.com  
+Backend repo: https://github.com/wafa-zainab/Fitness-studio-Booking
 
 ---
 
